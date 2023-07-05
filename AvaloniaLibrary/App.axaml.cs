@@ -1,11 +1,10 @@
 using Avalonia;
-using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using AvaloniaConsoleTest.Views;
+using AvaloniaLibrary.Views;
 using System;
 
-namespace AvaloniaConsoleTest
+namespace AvaloniaLibrary
 {
     public partial class App : Application
     {

@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace AvaloniaConsoleTest.Views
+namespace AvaloniaLibrary.Views
 {
     public partial class Window1 : Window
     {
