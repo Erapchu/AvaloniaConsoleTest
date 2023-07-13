@@ -1,0 +1,53 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:AvaloniaConsoleTest.ViewModels"
+        xmlns:local="clr-namespace:AvaloniaConsoleTest.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaConsoleTest.Views.MessageBoxWindow"
+        Title="{Binding Header}"
+        Width="NaN"
+        Height="NaN"
+        MaxWidth="1000"
+        MaxHeight="1000"
+        CanResize="False"
+        SizeToContent="WidthAndHeight"
+        Background="#B6B6B6"
+        WindowStartupLocation="CenterScreen">
+
+    <Design.DataContext>
+        <vm:MessageBoxViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*" Margin="24">
+        <ScrollViewer Margin="0 0 0 24" MaxWidth="700" MaxHeight="700">
+            <TextBlock
+                Text="{Binding Content}"
+                FontWeight="Bold"
+                TextWrapping="Wrap" />
+        </ScrollViewer>
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <Button
+                x:Name="ButtonLeft"
+                Command="{Binding ButtonLeftActionCommand}"
+                Content="{Binding ButtonLeftText}"
+                IsDefault="true"/>
+            <Button
+                x:Name="ButtonMiddle"
+                Command="{Binding ButtonMiddleActionCommand}"
+                Content="{Binding ButtonMiddleText}"
+                IsCancel="{Binding ButtonMiddleIsCancel}"
+                IsVisible="{Binding ButtonMiddleVisible}" />
+            <Button
+                x:Name="ButtonRight"
+                Command="{Binding ButtonRightActionCommand}"
+                Content="{Binding ButtonRightText}"
+                IsCancel="{Binding ButtonRightIsCancel}"
+                IsVisible="{Binding ButtonRightVisible}" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,12 +1,17 @@
-﻿using AvaloniaLibrary;
+﻿using Avalonia;
+using System;
 
 namespace AvaloniaConsoleTest
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            Bootstrapper.Run(args);
-        }
+        [STAThread]
+        public static void Main(string[] args) => BuildAvaloniaApp()
+            .StartWithClassicDesktopLifetime(args);
+
+        public static AppBuilder BuildAvaloniaApp()
+            => AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .LogToTrace();
     }
 }

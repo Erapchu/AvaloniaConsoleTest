@@ -1,10 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaLibrary", "AvaloniaLibrary\AvaloniaLibrary.csproj", "{7EB53F16-4007-4C69-A44F-32F00436078C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaConsoleTest", "AvaloniaConsoleTest\AvaloniaConsoleTest.csproj", "{F35A08B2-B913-4DFD-A871-53B4E618784F}"
 EndProject
 Global
@@ -13,10 +10,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7EB53F16-4007-4C69-A44F-32F00436078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EB53F16-4007-4C69-A44F-32F00436078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EB53F16-4007-4C69-A44F-32F00436078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EB53F16-4007-4C69-A44F-32F00436078C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F35A08B2-B913-4DFD-A871-53B4E618784F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F35A08B2-B913-4DFD-A871-53B4E618784F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F35A08B2-B913-4DFD-A871-53B4E618784F}.Release|Any CPU.ActiveCfg = Release|Any CPU

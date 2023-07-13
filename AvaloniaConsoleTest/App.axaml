@@ -1,0 +1,11 @@
+﻿<Application
+    x:Class="AvaloniaConsoleTest.App"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fluent="using:Avalonia.Themes.Fluent"
+    xmlns:local="using:AvaloniaConsoleTest">
+
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+</Application>
